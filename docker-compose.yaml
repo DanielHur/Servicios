@@ -7,7 +7,7 @@ services:
         aliases:
           - app1
     ports:
-      - "5001:5000"
+      - "5001:8787"
   app2:
     build: ./app2
     networks:
@@ -15,7 +15,7 @@ services:
         aliases:
           - app2
     ports:
-      - "5002:5000"
+      - "5002:8989"
   nginx:
     build: ./nginx
     networks:
