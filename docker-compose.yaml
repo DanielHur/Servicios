@@ -7,7 +7,7 @@ services:
         aliases:
           - app1
     ports:
-      - "5001:8787"
+      - "8989:8989"
   app2:
     build: ./app2
     networks:
@@ -15,17 +15,6 @@ services:
         aliases:
           - app2
     ports:
-      - "5002:8989"
-  nginx:
-    build: ./nginx
-    networks:
-      redpr:
-        aliases:
-          - balanceador
-    ports:
-      - "8585:80"
-    depends_on:
-      - app1
-      - app2
+      - "8686:8686"
 networks:
   redpr:

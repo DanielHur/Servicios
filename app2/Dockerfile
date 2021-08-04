@@ -1,6 +1,6 @@
-FROM alpine:3.10
+FROM alpine:latest
 
-# Se installa el OpenJDK-11
+# Se installa el OpenJDK-11.
 RUN apk add openjdk11
 
 # Variable de Entorno JAVA
