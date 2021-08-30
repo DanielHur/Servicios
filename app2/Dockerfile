@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.10.9
 
 # Se installa el OpenJDK-11.
 RUN apk add openjdk11
